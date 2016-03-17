@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : general
     Created on : 23-dic-2012, 22:56:38
     Author     : Cristian Trujillo
@@ -6,308 +6,309 @@
         estilo general plantilla de prueba reservando.
 */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong,
-sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
-figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
-
-::selection{
-
-}
-
+::-moz-selection {}
+::selection {}
 body {
-    line-height:1;
+  line-height: 1;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
-
 nav ul {
-    list-style:none;
+  list-style: none;
 }
-
 blockquote, q {
-    quotes:none;
+  quotes: none;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
-
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-/* 
+/*
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }*/
 
-/* 
+
+/*
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }*/
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
-
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
-
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/*  
+/*
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
 }*/
 
 input, select {
-    vertical-align:middle;
+  vertical-align: middle;
 }
 
-html{
-    /*background: black;*/
-}
-#logo_top{
-    position: absolute;
-    margin-left: 100px;
+html, body {
+  width: 100%;
+  height: 100%;
+  /*background: black;*/
 }
 
-#sheet{
-    margin: 0 auto;
-    width: 80%;
+#logo_top {
+  position: absolute;
+  margin-left: 100px;
 }
 
-#pt{
-    width: 501px;
-    height: 501px;
-    margin: 20px auto;
-    /*border: 1px #000 solid;*/
-    border-radius: 250px 250px 5px 250px;
-    -moz-border-radius: 250px 250px 5px 250px;
-    -webkit-border-radius: 250px 250px 5px 250px;
-    transform: rotate(45deg);
-    -moz-transform: rotate(45deg); 
-    -webkit-transform: rotate(45deg);
-    background: rgb(6, 56, 78);
-    box-shadow: 0 0 2pc #000;
+.flex_box{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#c1{
-
-    width: 500px;
-    height: 500px;
-    /*margin: 20px auto;*/
-    border: 1px rgb(8, 78, 114) solid;
-    border-radius: 250px 250px 250px 250px;
-    -moz-border-radius: 250px 250px 250px 250px;
-    -webkit-border-radius: 250px 250px 250px 250px;
-    transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg); 
-    -webkit-transform: rotate(-45deg);
-    background: rgb(8, 78, 114);
-    box-shadow:  0 0 2pc  rgba(0,0,0,.5);
-}
-#c2{
-    outline: none;
-    width: 352px;
-    height: 352px;
-    margin: 71px auto;
-    border: 3px rgb(41, 71, 100) solid;
-    border-radius: 176px 176px 176px 176px;
-    -moz-border-radius: 176px 176px 176px 176px;
-    -webkit-border-radius: 176px 176px 176px 176px;
-    box-shadow: 0 0 4pc rgba(255,255,255,.4);
+#sheet {
+  width: 100%;
+  height: 100%;
 }
 
-#c3{
-    outline: none;
-    width: 342px;
-    height: 342px;
-    margin: 2px auto;
-    border: 3px rgb(41, 71, 100) solid;
-    border-radius: 175px 175px 175px 175px;
-    -moz-border-radius: 175px 175px 175px 175px;
-    -webkit-border-radius: 175px 175px 175px 175px;
-    box-shadow: 0 0 10px rgb(41, 71, 100) inset;
-    background: rgb(215, 232, 244);
+#sheet > section{
+  width: 510px;
+  height: 510px;
 }
 
-#c4{
-    background: url(../img/nav_circulitos-de-abajo.png);
-    margin: 0 auto;
-    width: 49px;
-    height: 9px;
-    margin-top: 101px;
+#pt {
+  width: 501px;
+  height: 501px;
+  /*border: 1px #000 solid;*/
+  border-radius: 250px 250px 5px 250px;
+  -moz-border-radius: 250px 250px 5px 250px;
+  -webkit-border-radius: 250px 250px 5px 250px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background: rgb(6, 56, 78);
+  box-shadow: 0 0 2pc #000;
 }
 
-nav #text{
-    margin-top: -12px;
-    margin-left: -19px;
-    position: absolute;
-    width: 518px;
-    z-index: 1;
+#c1 {
+  width: 500px;
+  height: 500px;
+  border: 1px rgb(8, 78, 114) solid;
+  border-radius: 250px 250px 250px 250px;
+  -moz-border-radius: 250px 250px 250px 250px;
+  -webkit-border-radius: 250px 250px 250px 250px;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  background: rgb(8, 78, 114);
+  box-shadow: 0 0 2pc rgba(0, 0, 0, .5);
 }
 
-#c3 a{
-    /*outline: 1px black solid;*/
-    margin: 0;
-    padding: 0;
-    width: 67px;
-    height: 25px;
-    position: absolute;
-    z-index: 2;
-
+#c2 {
+  outline: none;
+  width: 352px;
+  height: 352px;
+  border: 3px rgb(41, 71, 100) solid;
+  border-radius: 176px 176px 176px 176px;
+  -moz-border-radius: 176px 176px 176px 176px;
+  -webkit-border-radius: 176px 176px 176px 176px;
+  box-shadow: 0 0 4pc rgba(255, 255, 255, .4);
 }
 
-#c3 #rest{
-    width: 128px;
-    top: 245px;
-    left: -30px;
-    transform: rotate(-92deg);
-    -moz-transform: rotate(-92deg);
-    -webkit-transform: rotate(-92deg);
+#c3 {
+  outline: none;
+  width: 342px;
+  height: 342px;
+  /*margin: 2px auto;*/
+  border: 3px rgb(41, 71, 100) solid;
+  border-radius: 175px 175px 175px 175px;
+  -moz-border-radius: 175px 175px 175px 175px;
+  -webkit-border-radius: 175px 175px 175px 175px;
+  box-shadow: 0 0 10px rgb(41, 71, 100) inset;
+  background: rgb(215, 232, 244);
 }
 
-#c3 #bar{
-    top: 141px;
-    left: 11px;
-    transform: rotate(-71deg);
-    -moz-transform: rotate(-71deg);
-    -webkit-transform: rotate(-71deg);
+#c4 {
+  background: url(../img/nav_circulitos-de-abajo.png);
+  width: 49px;
+  height: 9px;
+  /*margin-top: 101px;*/
 }
 
-#c3 #tur{
-    top: 73px;
-    width: 80px;
-    left: 50px;
-    transform: rotate(-46deg);
-    -moz-transform: rotate(-46deg);
-    -webkit-transform: rotate(-46deg); 
+nav #text {
+  margin-top: -12px;
+  margin-left: -19px;
+  position: absolute;
+  width: 518px;
+  z-index: 1;
 }
 
-#c3 #hote{
-    top: 15px;
-    left: 139px;
-    width: 80px;
-    transform: rotate(-19deg);
-    -moz-transform: rotate(-19deg);
-    -webkit-transform: rotate(-19deg);
+#c3 a {
+  /*outline: 1px black solid;*/
+  margin: 0;
+  padding: 0;
+  width: 67px;
+  height: 25px;
+  position: absolute;
+  z-index: 2;
 }
 
-#c3 #viaj{
-    top: 5px;
-    left: 244px;
-    transform: rotate(9deg);
-    -moz-transform: rotate(9deg);
-    -webkit-transform: rotate(9deg);
+#c3 #rest {
+  width: 128px;
+  top: 245px;
+  left: -30px;
+  transform: rotate(-92deg);
+  -moz-transform: rotate(-92deg);
+  -webkit-transform: rotate(-92deg);
 }
 
-#c3 #crus{
-    width: 80px;
-    top: 34px;
-    left: 321px;
-    transform: rotate(50deg);
-    -moz-transform: rotate(50deg);
-    -webkit-transform: rotate(29deg); 
+#c3 #bar {
+  top: 141px;
+  left: 11px;
+  transform: rotate(-71deg);
+  -moz-transform: rotate(-71deg);
+  -webkit-transform: rotate(-71deg);
 }
 
-#c3 #bell{
-    top: 104px;
-    left: 402px;
-    transform: rotate(75deg);
-    -moz-transform: rotate(75deg);
-    -webkit-transform: rotate(55deg);
-
+#c3 #tur {
+  top: 73px;
+  width: 80px;
+  left: 50px;
+  transform: rotate(-46deg);
+  -moz-transform: rotate(-46deg);
+  -webkit-transform: rotate(-46deg);
 }
 
-#c3 #espe{
-    width: 148px;
-    top: 240px;
-    left: 395px;
-    transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-
+#c3 #hote {
+  top: 15px;
+  left: 139px;
+  width: 80px;
+  transform: rotate(-19deg);
+  -moz-transform: rotate(-19deg);
+  -webkit-transform: rotate(-19deg);
 }
 
-#apuntador{
-    width: 502px;
-    transform: rotate(-35deg);
-    -webkit-transform: rotate(-35deg);
-    -moz-transform: rotate(-35deg);
-    margin-left: -81px;
-    margin-top: -82px;
+#c3 #viaj {
+  top: 5px;
+  left: 244px;
+  transform: rotate(9deg);
+  -moz-transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
 }
 
-#rest:hover + #apuntador{
-    display: none;
+#c3 #crus {
+  width: 80px;
+  top: 34px;
+  left: 321px;
+  transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -webkit-transform: rotate(29deg);
 }
 
-#fch, #fcha{
-    position: absolute;
-    opacity: 0.8;
-}
-#fch{
-    background: url(../img/flechita-arribita.png);
-    width: 136px;
-    height: 165px;
-    margin-top: 69px;
-    margin-left: 455px;    
+#c3 #bell {
+  top: 104px;
+  left: 402px;
+  transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  -webkit-transform: rotate(55deg);
 }
 
-#fcha{
-    background: url(../img/flechita-abajito.png);
-    width: 288px;
-    height: 204px;
-    margin-top: 90px;
-    margin-left: 55px;
+#c3 #espe {
+  width: 148px;
+  top: 240px;
+  left: 395px;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
-#c3 a{
-    height: 50px;    
-    /*outline: 1px yellowgreen solid;*/
+#apuntador {
+  width: 502px;
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  position: relative;
+  animation: girar 3s linear infinite;
 }
 
-#power{
-    background: url(../img/powered.png);
-    width: 150px;
-    height: 50px;
-    position: relative;
-    float: right;
-    margin-top: -68px;
+#rest:hover + #apuntador {
+  display: none;
+}
+
+#fch, #fcha {
+  position: absolute;
+  opacity: 0.8;
+}
+
+#fch {
+  background: url(../img/flechita-arribita.png);
+  width: 136px;
+  height: 165px;
+  margin-top: 67px;
+  margin-left: 383px;
+}
+
+#fcha {
+  background: url(../img/flechita-abajito.png);
+  width: 288px;
+  height: 204px;
+  margin-top: 90px;
+  margin-left: 134px;
+}
+
+#c3 a {
+  height: 50px;
+  /*outline: 1px yellowgreen solid;*/
+}
+
+@keyframes girar{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
