@@ -272,7 +272,8 @@ nav #text {
   -webkit-transform: rotate(-35deg);
   -moz-transform: rotate(-35deg);
   position: relative;
-  animation: girar 3s linear infinite;
+  -webkit-animation: girar 3s linear infinite;
+          animation: girar 3s linear infinite;
 }
 
 #rest:hover + #apuntador {
@@ -305,11 +306,24 @@ nav #text {
   /*outline: 1px yellowgreen solid;*/
 }
 
-@keyframes girar{
+@-webkit-keyframes girar{
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes girar{
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
