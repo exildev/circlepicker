@@ -6,7 +6,12 @@
         estilo general plantilla de prueba reservando.
 */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -57,8 +62,9 @@ input, select {
 html, body {
   width: 100%;
   height: 100%;
-  background-image: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px , rgb(215, 232, 244) 0%, rgba(0, 0, 255, 0) 50%, rgb(120, 56, 78) 95%);
-  background-image: radial-gradient(ellipse farthest-corner at 45px 45px , rgb(215, 232, 244) 0%, rgba(0, 0, 255, 0) 50%, rgb(120, 56, 78) 95%);
+  /*background: black;*/
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px , rgb(215, 232, 244) 0%, rgba(0, 0, 255, 0) 50%, rgb(6, 56, 78) 95%);
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px , rgb(215, 232, 244) 0%, rgba(0, 0, 255, 0) 50%, rgb(6, 56, 78) 95%);
   overflow: hidden;
   -webkit-animation: colorbg 20s infinite;
           animation: colorbg 20s infinite;
@@ -86,6 +92,8 @@ html, body {
 #sheet {
   width: 100%;
   height: 100%;
+  -webkit-animation: op 3s;
+          animation: op 3s;
 }
 
 #sheet > section{
@@ -155,7 +163,6 @@ html, body {
   background: url(../img/nav_circulitos-de-abajo.png);
   width: 49px;
   height: 9px;
-  /*margin-top: 101px;*/
 }
 
 nav #text {
@@ -372,12 +379,12 @@ nav #text {
   25%{
     border: 3px rgb(120, 71, 100) solid;
     box-shadow: 0 0 10px rgb(120, 71, 100) inset;
-    background: rgb(215, 232, 244);
+    background: rgb(239, 214, 244);
   }
   50%{
     border: 3px rgb(41, 140, 100) solid;
     box-shadow: 0 0 10px rgb(41, 140, 100) inset;
-    background: rgb(215, 232, 244);
+    background: rgb(214, 244, 227);
   }
   75%{
     border: 3px rgb(71, 71, 71) solid;
@@ -402,12 +409,12 @@ nav #text {
   25%{
     border: 3px rgb(120, 71, 100) solid;
     box-shadow: 0 0 10px rgb(120, 71, 100) inset;
-    background: rgb(215, 232, 244);
+    background: rgb(239, 214, 244);
   }
   50%{
     border: 3px rgb(41, 140, 100) solid;
     box-shadow: 0 0 10px rgb(41, 140, 100) inset;
-    background: rgb(215, 232, 244);
+    background: rgb(214, 244, 227);
   }
   75%{
     border: 3px rgb(71, 71, 71) solid;
@@ -419,4 +426,14 @@ nav #text {
     box-shadow: 0 0 10px rgb(41, 71, 100) inset;
     background: rgb(215, 232, 244);
   }
+}
+
+@-webkit-keyframes op{
+  0%{ opacity: 0}
+  100%{ opacity: 1}
+}
+
+@keyframes op{
+  0%{ opacity: 0}
+  100%{ opacity: 1}
 }
